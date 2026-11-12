@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Menú - Café Aurora</title>
+</head>
+
+<body>
+  <header>
+    <div id="cabezita">
+      <nav>
+        <img src="images/logo.png" alt="Café Aurora Logo" class="logo" />
+        <ul id="menuXD">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Nuestro menú</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="formulario.html">Iniciar Sesion</a></li>
+        </ul>
+        <button class="hamburguer" id="btn_mostar" style="
+              width: 50px;
+              height: 50px;
+              background: none;
+              color: #fffcf9;
+              padding: 0;
+              font-size: 60px;
+              border: none;
+              cursor: pointer;
+            ">
+          ≡
+        </button>
+      </nav>
+    </div>
+    <h1>Café Aurora</h1>
+  </header>
+  <main>
+    <section id="menu">
+      <h2 class="subtitulo1">Menú</h2>
+      <article id="menu-items">
+        <h3 class="subtitulo2">Bebidas</h3>
+        <ul class="menu-list">
+          <li class="menu-item">Café Americano $3.99</li>
+          <img src="images/cafe_americano.jpg" alt="Café Americano" class="menu-image" />
+          <br />
+
+          <button class="item" id="item">Comprar</button>
+          <li class="menu-item">Cappuccino $4.50</li>
+          <img src="images/capuccino.jpg" alt="Cappuccino" class="menu-image" />
+          <br />
+          <button class="item" id="item1">Comprar</button>
+          <li class="menu-item">Té Verde $2.99</li>
+          <img src="images/te_verde.jpg" alt="Té Verde" class="menu-image" />
+          <li class="menu-item">Chocolate Caliente $4.00</li>
+          <button class="item" id="item1">Comprar</button>
+          <br /><br />
+          <img src="images/chocolate_caliente.jpg" alt="Chocolate Caliente" class="menu-image" />
+          <br />
+
+          <button class="item" id="item2">Comprar</button>
+
+          <li class="menu-item">Batido de Fresa $5.00</li>
+          <img src="images/batido_de_fresa.jpg" alt="Batido de Fresa" class="menu-image" />
+          <br />
+
+          <button class="item" id="item3">Comprar</button>
+        </ul>
+        <h3 class="subtitulo2">Comidas</h3>
+        <ul class="menu-list">
+          <li class="menu-item">Croissant $2.50</li>
+          <img src="images/croissant.jpg" alt="Croissant" class="menu-image" />
+          <br />
+
+          <button class="item" id="item4">Comprar</button>
+
+          <li class="menu-item">Tostada Francesa $3.00</li>
+          <img src="images/tostada_francesa.jpg" alt="Tostada Francesa" class="menu-image" />
+          <br />
+
+          <button class="item" id="item5">Comprar</button>
+
+          <li class="menu-item">Ensalada César $4.50</li>
+          <img src="images/ensalada_cesar.jpg" alt="Ensalada César" class="menu-image" />
+          <br />
+
+          <button class="item" id="item6">Comprar</button>
+
+          <li class="menu-item">Sándwich de Pollo $5.00</li>
+          <img src="images/sandwich_pollo.webp" alt="Sándwich de Pollo" class="menu-image" />
+          <br />
+
+          <button class="item" id="item7">Comprar</button>
+
+          <li class="menu-item">Quiche de Espinacas $4.00</li>
+          <img src="images/quiche.jpg" alt="Quiche de Espinacas" class="menu-image" />
+          <br />
+
+          <button class="item" id="item8">Comprar</button>
+
+          <li class="menu-item">Bagel con Queso Crema $3.50</li>
+          <img src="images/begel_queso.jpg" alt="Bagel con Queso Crema" class="menu-image" />
+          <br />
+
+          <button class="item" id="item9">Comprar</button>
+
+          <li class="menu-item">Muffin de Arándanos $2.50</li>
+          <img src="images/muffin_arandanos.jpg" alt="Muffin de Arándanos" class="menu-image" />
+          <br />
+
+          <button class="item" id="item10">Comprar</button>
+
+          <li class="menu-item">Panini de Jamón y Queso $4.00</li>
+          <img src="images/panini.jpg " alt="Panini de Jamón y Queso" class="menu-image" />
+          <br />
+
+          <button class="item" id="item11">Comprar</button>
+
+          <li class="menu-item">Sopa del Día $3.50</li>
+          <img src="images/sopa_dia.jpg" alt="Sopa del Día" class="menu-image" />
+          <br />
+
+          <button class="item" id="item12">Comprar</button>
+
+          <li class="menu-item">Tarta de Manzana $3.00</li>
+          <img src="images/tarta_manzana.webp" alt="Tarta de Manzana" class="menu-image" />
+          <br />
+
+          <button class="item" id="item13">Comprar</button>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p id="pie">© 2023 Café Aurora. Todos los derechos reservados.</p>
+  </footer>
+  <script src="scripts/script.js">
+    document.addEventListener("DOMContentLoaded", () => {
+      const btnMostrar = document.getElementById("btn_mostar");
+      const menuXD = document.getElementById("menuXD");
+      const btnItem = document.getElementById("item");
+      const btnDatos = document.getElementById("btn_enviar");
+      const panoramaContainer = document.getElementById("panorama-cafe");
+      let usuario = document.getElementById("nombre").value;
+      let correo = document.getElementById("email").value;
+      let contrasena = document.getElementById("contrasena").value;
+
+      btnMostrar.addEventListener("click", (event) => {
+        event.preventDefault();
+        menuXD?.classList.toggle("mostrarXD");
+      });
+
+      if (panoramaContainer) {
+        pannellum.viewer("panorama-cafe", {
+          type: "equirectangular",
+          panorama: "images/cafeteriatest.jpg",
+        });
+      }
+
+      btnItem.addEventListener("click", () => {
+        alert("Compra exitosa");
+      });
+
+      btnDatos.addEventListener("click", (event) => {
+        if (usuario == "" || correo == "" || contrasena == "") {
+          alert("Debe ingresar datos");
+        } else {
+          alert("Datos enviados correctamente");
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

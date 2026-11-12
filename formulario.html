@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería - Café Aurora</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div id="cabezita">
+      <nav>
+        <img src="images/logo.png" alt="Café Aurora Logo" class="logo" />
+        <ul id="menuXD">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Nuestro menú</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="formulario.html">Iniciar Sesion</a></li>
+        </ul>
+        <button class="hamburguer" id="btn_mostar" style="
+              width: 50px;
+              height: 50px;
+              background: none;
+              color: #fffcf9;
+              padding: 0;
+              font-size: 60px;
+              border: none;
+              cursor: pointer;
+            ">
+          ≡
+        </button>
+      </nav>
+    </div>
+    <h1>Café Aurora</h1>
+  </header>
+  <br /><br />
+  <main>
+    <form>
+      <fieldset>
+        <legend>INICIAR SESIÓN</legend>
+        <br />
+        <label for="nombre">Usuario</label>
+        <input type="text" name="nombre" id="nombre" class="name" required />
+        <br /><br />
+        <label for="email">Correo electronico :</label>
+        <input type="email" name="email" id="email" required />
+        <br /><br />
+        <label for="contraseña">Contraseña: </label>
+        <input type="password" name="contraseña" id="contrasena" />
+        <br /><br />
+        <button type="submit" id="btn_enviar">Enviar</button>
+        <div id="registrarse">
+          <a href="registrarse.html" class="registrarse"> Registarse </a>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+  <br /><br />
+  <footer>
+    <p id="pie">© 2023 Café Aurora. Todos los derechos reservados.</p>
+  </footer>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

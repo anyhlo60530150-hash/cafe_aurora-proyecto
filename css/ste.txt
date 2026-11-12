@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: radial-gradient(white, #f5e1c0, #d9a066, beige);
+}
+h1 {
+  color: rgb(216, 157, 48);
+  text-align: center;
+  margin-top: 20px;
+  font-family: impact;
+  font-style: italic;
+  font-size: 40px;
+  padding: 15px 20px;
+  border-top: 5px solid #572e07;
+  border-bottom: 5px solid #572e07;
+  background: linear-gradient(rgb(235, 208, 149), white);
+}
+h2 {
+  color: rgb(133, 83, 27);
+  text-align: center;
+  margin-top: 20px;
+  font-family: cursive;
+  font-size: 30px;
+  padding: 15px 20px;
+}
+p {
+  color: black;
+  margin-top: 20px;
+  font-family: cursive;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  transform: scale(1.2);
+  transition: 0.5s;
+  background: linear-gradient(black, burlywood, beige, burlywood, black);
+  padding: 10px 10px;
+  border-radius: 37%;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+nav {
+  background: radial-gradient(white, rgb(151, 115, 62), black);
+  padding: 1rem;
+  display: flex;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  font-family: impact;
+  font-size: 20px;
+  color: rgb(133, 83, 27);
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  margin-top: 0.75cm;
+  display: block;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  background-color: rgb(133, 83, 27);
+  color: white;
+  border-radius: 5px;
+  font-style: italic;
+}
+.menu-list {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  font-family: cursive;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+.menu-image {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 5px solid white;
+  transition: 0.5s;
+  background-color: burlywood;
+}
+.menu-image:hover {
+  transform: scale(1.2);
+}
+#menu {
+  margin: 15px 30px;
+  background: radial-gradient(orange, brown, black);
+  color: white;
+  border-radius: 30px;
+  border: 10px solid #c07630;
+}
+.subtitulo2 {
+  font-family: cursive;
+  font-style: oblique;
+  background: linear-gradient(rgb(109, 64, 13), orange);
+  padding: 15px 150px;
+  font-size: 30px;
+}
+.menu-item {
+  display: block;
+  text-align: left;
+  border-bottom: 3px dotted white;
+  padding: 0px;
+  margin: 15px 0px 20px 0;
+}
+#pie {
+  font-size: 17px;
+  font-family: monospace;
+  padding: 20px 0 15px 0;
+  text-align: center;
+  color: white;
+  background: radial-gradient(orange, black);
+}
+
+.gallery-image {
+  width: 350px;
+  height: 250px;
+  padding: 15px 20px;
+  margin: 15px 15px 15px 15px;
+  border: 3px dashed rgb(0, 0, 0);
+  background-color: rgb(133, 89, 40);
+  box-shadow: 20px 20px 3px rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+.gallery {
+  text-align: center;
+}
+fieldset {
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  border: 5px dotted black;
+  background: radial-gradient(white skyblue blue);
+}
+legend {
+  font-size: 30px;
+  background-color: rgb(218, 172, 87);
+  border: 3px dashed black;
+  border-radius: 30px;
+  font-family: Impact;
+  padding: 5px 10px;
+}
+input {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 7px 9px;
+  border-radius: 13px;
+  border: 3px solid black;
+}
+label {
+  color: rgb(128, 92, 15);
+  font-family: fantasy;
+  font-size: 20px;
+  cursor: pointer;
+}
+.name {
+  text-transform: uppercase;
+}
+#pago {
+  background-color: rgb(185, 130, 47);
+  border-radius: 15px;
+  font-size: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 5px 4px;
+  border: 3px solid black;
+}
+#pago:hover {
+  transform: scale(1.2);
+}
+button {
+  background-color: rgb(252, 235, 204);
+  padding: 7px 9px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: cursive;
+  font-size: 17px;
+  border: 3px solid black;
+}
+.img_ubicacion {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.cafeteria {
+  border: 3px solid black;
+  box-shadow: 10px 10px 10px 10px;
+}
+p {
+  margin: 0 30px 0 30px;
+}
+#atencion {
+  background-color: rgb(185, 130, 47);
+  border-radius: 15px;
+  font-size: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 5px 4px;
+  border: 3px solid black;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería - Café Aurora</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="cabezita">
+        <nav>
+          <img src="images/logo.png" alt="Café Aurora Logo" class="logo" />
+          <ul id="menuXD">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Nuestro menú</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="formulario.html">Iniciar Sesion</a></li>
+          </ul>
+          <button class="hamburguer" id="btn_mostar">≡</button>
+        </nav>
+      </div>
+      <h1>Café Aurora</h1>
+    </header>
+    <br /><br />
+    <main>
+      <form action="test-01/registar.php" method="post">
+        <fieldset>
+          <legend>REGISTRARSE</legend>
+          <br />
+          <label for="nombre">Usuario</label>
+          <input type="text" name="nombre" id="nombre" class="name" required />
+          <br /><br />
+          <label for="email">Correo electronico :</label>
+          <input type="email" name="email" id="email" required />
+          <br /><br />
+          <label for="contraseña">Contraseña: </label>
+          <input type="password" name="contraseña" id="contraseña" />
+          <br /><br />
+          <label for="confirm">Confirma la contraseña </label>
+          <input type="password" name="confirm" id="confirm" />
+          <br /><br />
+          <button type="submit" id="btn_enviar">Registarse</button>
+          <div id="registrarse">
+            <a href="formulario.html" class="registrarse">Iniciar Sesion </a>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <br /><br />
+    <footer>
+      <p id="pie">© 2023 Café Aurora. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
